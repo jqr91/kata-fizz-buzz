@@ -7,7 +7,7 @@
     "build": "tsc",
     "test": "jest --watchAll"
   },
-  "author": "",
+  "author": "Ruggero Querinis",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^26.0.20",
