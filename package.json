@@ -1,0 +1,20 @@
+{
+  "name": "kata-fizz-buzz",
+  "version": "1.0.0",
+  "description": "Fizz Buzz Basic Kata - Feature 1 - Basic Fizz Buzz Scoring",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --watchAll"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.1"
+  },
+  "dependencies": {
+    "typescript": "^4.1.4"
+  }
+}
