@@ -1,4 +1,4 @@
-import { fizzbuzz } from "./index";
+import { fizzbuzz, fizzbuzzGenerator } from "./index";
 
 describe('FizzBuzz Kata', ()=>{
     it('should return the same number', () => {
@@ -7,21 +7,26 @@ describe('FizzBuzz Kata', ()=>{
     });
 
     it('should return fizz for multiples of three', () => {
-        expect(fizzbuzz(3)).toBe('fizz');
-        expect(fizzbuzz(9)).toBe('fizz');
-        expect(fizzbuzz(123)).toBe('fizz'); 
+        expect(fizzbuzz(3)).toBe('Fizz');
+        expect(fizzbuzz(9)).toBe('Fizz');
+        expect(fizzbuzz(123)).toBe('Fizz'); 
     });
 
     it('should return buzz for multiples of five', ()=>{
-        expect(fizzbuzz(5)).toBe('buzz');
-        expect(fizzbuzz(20)).toBe('buzz');
-        expect(fizzbuzz(200)).toBe('buzz');
+        expect(fizzbuzz(5)).toBe('Buzz');
+        expect(fizzbuzz(20)).toBe('Buzz');
+        expect(fizzbuzz(200)).toBe('Buzz');
     })
 
     it('should return fizz buzz for multiples of three and five', ()=> {
-        expect(fizzbuzz(15)).toBe('fizz buzz');
-        expect(fizzbuzz(45)).toBe('fizz buzz');
-        expect(fizzbuzz(315)).toBe('fizz buzz');
+        expect(fizzbuzz(15)).toBe('Fizz Buzz');
+        expect(fizzbuzz(45)).toBe('Fizz Buzz');
+        expect(fizzbuzz(315)).toBe('Fizz Buzz');
     });
+
+    it('should return 1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 Fizz Buzz',()=>{
+        expect(fizzbuzzGenerator(15)).toBe('1 2 Fizz 4 Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 Fizz Buzz');
+    });
+
 
 })
